@@ -159,11 +159,16 @@ def main():
                 with st.spinner("考え中..."):
                     try:
                         answer = qa.invoke(user_input)
+                        # 辞書で返ってきたら'result'だけ見やすく取り出す
+                        if isinstance(answer, dict) and "result" in answer:
+                            answer_text = answer["result"]
+                        else:
+                            answer_text = str(answer)
                     except Exception as e:
-                        answer = f"エラーが発生しました：\n\n```\n{str(e)}\n```"
-                    st.markdown(answer)
+                        answer_text = f"エラーが発生しました：\n\n```\n{str(e)}\n```"
+                    st.markdown(answer_text)
 
-            st.session_state.messages.append({"role": "assistant", "content": answer, "time": timestamp})
+            st.session_state.messages.append({"role": "assistant", "content": answer_text, "time": timestamp})
 
         st.divider()
 
