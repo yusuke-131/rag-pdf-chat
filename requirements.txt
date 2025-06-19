@@ -1,0 +1,23 @@
+streamlit
+python-dotenv
+PyMuPDF
+uuid
+
+# LangChain関連
+langchain
+langchain-community
+langchain-core
+langchain-huggingface
+langchain-ollama
+
+# Embeddings & LLM
+openai
+huggingface-hub
+sentence-transformers
+transformers
+
+# VectorStore
+chromadb
+
+# その他
+tiktoken
