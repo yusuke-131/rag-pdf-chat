@@ -6,6 +6,9 @@ Streamlit で動作し、LangChain・Chroma・OpenAIやローカルLLM（Ollama�
 💡 注意：このアプリは HuggingFace, OpenAI または Ollama（ローカルLLM）を使って動作します。
         そのため、.envの設定やモデルのダウンロードが必要です。
 
+サンプルPDF：sample_pdfフォルダに、テスト用の軽量なPDFファイル（詩・短文など）を含めています。
+　　　　　　　アプリの動作確認にご利用ください。
+
 🔧 機能一覧
 
 📎 複数PDFのアップロード
