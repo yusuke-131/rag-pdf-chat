@@ -1,0 +1,12 @@
+streamlit
+pymupdf
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-huggingface
+langchain-text-splitters
+langchain-ollama
+langchain-chroma
+huggingface-hub
+python-dotenv
