@@ -1,6 +1,6 @@
 streamlit
 python-dotenv
-PyMuPDF
+pymupdf
 uuid
 
 # LangChain関連
@@ -9,6 +9,9 @@ langchain-community
 langchain-core
 langchain-huggingface
 langchain-ollama
+langchain-openai
+langchain-text-splitters
+langchain-chroma
 
 # Embeddings & LLM
 openai
